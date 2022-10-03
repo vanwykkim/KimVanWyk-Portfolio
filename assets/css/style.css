@@ -1,11 +1,126 @@
 
 /* default styling for whole page */
 *{
-    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     font-size: 16px;
     line-height: 24px;
 }
 
-.container{
-display:flex;
+:root{
+    --main-header-text-color: rgb(92, 41, 92);
 }
+.header {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: lavenderblush
+}
+
+/* code for Gold text color from https://addisonlegere.com/blog/gold-text-with-css-image/ */
+
+/* header class with h1 tag */
+.header h1 {
+    display: inline-flex;
+    flex-wrap:wrap;
+    font-size: 65px;
+    line-height: 75px;
+    padding: 30px;
+    color: #D5AD6D; /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+
+/* header class w/ nav tag- styles the navigational part of the header - sets defaults */
+.header nav {
+    padding-top: 65px;
+    margin-right: 20px;
+    align-content: bottom;
+    float: right;
+}
+
+/* header class with nav and unordered list tags - sets the list style type for the navigation */
+.header nav ul {
+    list-style-type: none;
+}
+
+/* sets the navigation list to inline and the left margin */
+.header nav ul li {
+    display: inline-flex;
+    align-content: flex-end;
+    margin-left: 25px;
+}
+
+
+/* sets the color for the hrefs and underlining and bold */
+a {
+    color: #D5AD6D; /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    font-weight: bold;
+    font-size: 30px;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    background-color: var(--main-header-text-color);
+    padding: 10px;
+    color: lavenderblush;
+    font-weight: bold;
+  }
+
+
+  main{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: lavenderblush;
+    color: var(--main-header-text-color);
+  }
+  section{
+    display:flex;
+
+  }
+  .about-me h3{
+    justify-content: flex-end;
+    border-right: 10px;
+    border-color: var(--main-header-text-color);
+    /* color: var(--main-header-text-color) */
+  }
+  .portfolio{
+    
+  }
+  .contact-me{
+    
+  }
+
+  footer{
+    display:flex;
+    background-color: var(--main-header-text-color);
+    color: lavenderblush;
+  }
+  @media screen and (max-width: 768px) {
+    main,
+    nav,
+    footer {
+      flex-direction: column;
+    }
+  }
