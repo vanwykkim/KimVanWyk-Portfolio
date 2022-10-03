@@ -104,20 +104,60 @@ a {
     color: var(--main-header-text-color);
   }
   section{
-    display:flex;
+    display: flex;
 
   }
-  .about-me h3{
-    justify-content: flex-end;
-    border-right: 10px;
-    border-color: var(--main-header-text-color);
-    /* color: var(--main-header-text-color) */
+  .section-row{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+    /* header, right border
+    about me
+    portfolio has a column in that 
+    contact */ 
   }
+
+
+  .section-row h3{
+    width: 20%;
+    font-size: 30px;
+
+  }
+
+  .section-row h3 p{
+    line-height: 35px;
+  }
+
+  .about-me{
+    width: 80%;
+    border-left: 5px solid fuchsia;
+    padding-left: 20px;
+    
+  }
+
+
   .portfolio{
-    
+    width: 80%;
+    border-left: 5px solid fuchsia;
+    padding-left: 20px;    
   }
+
+  .portfolio-main{
+    width:100%;
+    /* the main project full size */
+  }
+  .portfolio-small{
+    width:50%;
+  }
+
   .contact-me{
-    
+    display: flex-inline;
+    width: 80%;
+    border-left: 5px solid fuchsia;
+    padding-left: 20px;
+  
   }
 
   footer{
