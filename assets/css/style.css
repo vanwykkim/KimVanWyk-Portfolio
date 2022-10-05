@@ -68,16 +68,21 @@
 }
 
 
-/* sets the color for the hrefs and underlining and bold */
+/* sets the color for the hrefs and size and bold */
 header a {
     color: #D5AD6D; /*if no support for background-clip*/
-    background: -webkit-linear-gradient(transparent, transparent),
+    /* background: -webkit-linear-gradient(transparent, transparent),
     -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
+    -webkit-text-fill-color: transparent;    */
     font-weight: bold;
     font-size: 30px;
+}
+
+header a:hover{
+color: fuchsia;
+  /* background-color: fuchsia; */
 }
 
 /* Container holding the image and the text */
@@ -124,7 +129,8 @@ header a {
 
   .section-row h3{
     width: 20%;
-    font-size: 30px;
+    font-size: 48px;
+    margin-left: 50px;
 
   }
 
@@ -147,9 +153,13 @@ header a {
     align-content: space-between; 
   }
 
+
   .portfolio-main{
     margin-left: 20px;
+    padding-right: 40px;
     width:100%;
+    
+    
     /* the main project full size */
   }
   .portfolio-main a{
@@ -157,9 +167,11 @@ header a {
   }
   .portfolio-main img{
     border: 5px solid gray;
+    max-height: 600px;
   }
-  .portfolio-small{
-    /* width:50%; */
+  
+  .portfolio-small a{
+    position: relative;
   }
   .portfolio-small img{
     margin: 20px;
@@ -169,10 +181,12 @@ header a {
   /* trying to position names on portfolios */
   .portfolio-name{
     position: absolute;
-    top: 50%;
+    top: -250px;
+    left: 20px;
     /* bottom: 50%;
     right: 15%; */
     background-color: var(--main-header-text-color);
+    border: 5px solid gray;
     padding: 10px;
     color: lavenderblush;
     font-weight: bold;
