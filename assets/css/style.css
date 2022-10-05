@@ -11,6 +11,9 @@
 
 :root{
     --main-header-text-color: rgb(92, 41, 92);
+    --highlight-color: fuchsia;
+    --background-light-color: lavenderblush;
+    --border-color: gray;
 }
 .header {
     display: inline-flex;
@@ -19,7 +22,7 @@
     flex-wrap: wrap;
     padding: 20px;
     padding-top: 40px;
-    background-color: lavenderblush
+    background-color: var(--background-light-color);
 }
 
  .profile-photo{
@@ -76,7 +79,7 @@ header a {
 }
 
 header a:hover{
-color: fuchsia;
+color: var(--highlight-color);
   /* background-color: fuchsia; */
 }
 
@@ -92,7 +95,7 @@ color: fuchsia;
     right: 15%;
     background-color: var(--main-header-text-color);
     padding: 10px;
-    color: lavenderblush;
+    color: var(--background-light-color);
     font-weight: bold;
   }
 
@@ -100,7 +103,7 @@ color: fuchsia;
   main{
     display:flex;
     flex-wrap: wrap;
-    background-color: lavenderblush;
+    background-color: var(--background-light-color);
     color: var(--main-header-text-color);
   }
 
@@ -135,7 +138,7 @@ color: fuchsia;
 
   .about-me{
     width: 80%;
-    border-left: 5px solid fuchsia;
+    border-left: 5px solid var(--highlight-color);
     padding-left: 20px;
     
   }
@@ -144,7 +147,7 @@ color: fuchsia;
 
   .portfolio{
     width: 80%;
-    border-left: 5px solid fuchsia;   
+    border-left: 5px solid var(--highlight-color);   
     align-content: space-between; 
   }
 
@@ -161,7 +164,7 @@ color: fuchsia;
     position:relative;
   }
   .portfolio-main img{
-    border: 5px solid gray;
+    border: 5px solid var(--border-color);
     max-height: 600px;
   }
   
@@ -170,7 +173,7 @@ color: fuchsia;
   }
   .portfolio-small img{
     margin: 20px;
-    border: 5px solid gray;
+    border: 5px solid var(--border-color);
   }
 
   /* trying to position names on portfolios */
@@ -181,9 +184,9 @@ color: fuchsia;
     /* bottom: 50%;
     right: 15%; */
     background-color: var(--main-header-text-color);
-    border: 5px solid gray;
+    border: 5px solid var(--border-color);
     padding: 10px;
-    color: lavenderblush;
+    color: var(--background-light-color);
     font-weight: bold;
   }
 
@@ -192,7 +195,7 @@ color: fuchsia;
     display: inline-flex;
     justify-content:space-evenly;
     width: 80%;
-    border-left: 5px solid fuchsia;
+    border-left: 5px solid var(--highlight-color);
     font-size: 20px;
     font-weight: bold;
     margin-right:20px;
@@ -211,6 +214,10 @@ color: fuchsia;
     max-height: 50px;
   }
 
+  .contact-me-pair a:hover{
+    color: var(--highlight-color);
+  }
+
 
 
   footer{
@@ -221,7 +228,7 @@ color: fuchsia;
     justify-content: center;
     padding: 10px;
     background-color: var(--main-header-text-color);
-    color: lavenderblush;
+    color: var(--background-light-color);
     
   }
   @media screen and (max-width: 768px) {
