@@ -129,7 +129,6 @@ color: var(--highlight-color);
     width: 20%;
     font-size: 48px;
     margin-left: 50px;
-
   }
 
   .section-row h3 p{
@@ -176,13 +175,11 @@ color: var(--highlight-color);
     border: 5px solid var(--border-color);
   }
 
-  /* trying to position names on portfolios */
+  /* trying to position names and info on portfolios, box with border and text */
   .portfolio-name{
     position: absolute;
     top: -250px;
     left: 20px;
-    /* bottom: 50%;
-    right: 15%; */
     background-color: var(--main-header-text-color);
     border: 5px solid var(--border-color);
     padding: 10px;
@@ -190,6 +187,7 @@ color: var(--highlight-color);
     font-weight: bold;
   }
 
+  /* set parameteres for the contact me section, min height, display style, margin right to space evenly as left margin on section already 20px */
   .contact-me{
     min-height: 100px;
     display: inline-flex;
@@ -207,19 +205,20 @@ color: var(--highlight-color);
     align-items: center;
   }
   
-  
+  /* set max size of icons in conact and a margin to set distance between icon and info */
   .contact-me-pair img{
     margin-right: 10px;
     max-width: 50px;
     max-height: 50px;
   }
 
+
+  /* highlight a link on hover in the Contact Me section */
   .contact-me-pair a:hover{
     color: var(--highlight-color);
   }
 
-
-
+/* parameters for the footer at the bottom of the page, direction, wrap, align, colors */
   footer{
     display:flex;
     flex-wrap: wrap;
@@ -231,6 +230,8 @@ color: var(--highlight-color);
     color: var(--background-light-color);
     
   }
+
+  /* Changes direction of display for smaller display (cell phone) */
   @media screen and (max-width: 768px) {
     main,
     nav,
