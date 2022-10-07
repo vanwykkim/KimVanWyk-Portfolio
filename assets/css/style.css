@@ -9,12 +9,15 @@
     line-height: 24px;
 }
 
+/* global variables for color selections */
 :root{
     --main-header-text-color: rgb(92, 41, 92);
     --highlight-color: fuchsia;
     --background-light-color: lavenderblush;
     --border-color: gray;
 }
+
+/* sets the attributes for the header */
 .header {
     display: inline-flex;
     justify-content: space-between;
@@ -25,6 +28,7 @@
     background-color: var(--background-light-color);
 }
 
+/* sets size/margin for the profile photo */
  .profile-photo{
     display: inline-flex;
     width: 100px;
@@ -78,17 +82,17 @@ header a {
     font-size: 30px;
 }
 
+/* sets the hover color for the hrefs */
 header a:hover{
 color: var(--highlight-color);
-  /* background-color: fuchsia; */
 }
 
-/* Container holding the image and the text */
+/* Container holding the main page image and the text */
 .main-image {
     position: relative;
   }
   
-  /* Bottom right text */
+  /* Bottom right text for the main page image */
   .text-block {
     position: absolute;
     bottom: 15%;
@@ -99,7 +103,7 @@ color: var(--highlight-color);
     font-weight: bold;
   }
 
-
+/* sets flexbox and colors for main section */
   main{
     display:flex;
     flex-wrap: wrap;
@@ -107,10 +111,12 @@ color: var(--highlight-color);
     color: var(--main-header-text-color);
   }
 
+  /* displays the sections in flex */
   section{
     display: flex;
   }
 
+  /* sets the row sections for the page */
   .section-row{
     position: relative;
     display: flex;
@@ -124,17 +130,15 @@ color: var(--highlight-color);
     contact */ 
   }
 
-
+ /* settings for the section headers */
   .section-row h3{
     width: 20%;
     font-size: 48px;
-    margin-left: 50px;
+    margin-left: 45px;
+    line-height: 38px;
   }
-
-  .section-row h3 p{
-    line-height: 35px;
-  }
-
+ 
+  /* settings for the about-me section */
   .about-me{
     width: 80%;
     border-left: 5px solid var(--highlight-color);
@@ -143,33 +147,38 @@ color: var(--highlight-color);
   }
 
   
-
+/* settings for the portfolio section */
   .portfolio{
     width: 80%;
     border-left: 5px solid var(--highlight-color);   
     align-content: space-between; 
   }
 
-
+/* settings for the maint portfolio */
   .portfolio-main{
     margin-left: 20px;
     padding-right: 40px;
     width:100%;
-    
-    
     /* the main project full size */
   }
+
+   /* setting parent for portfolio-name for main image */
   .portfolio-main a{
     position:relative;
   }
+
+   /* parameters for the portfolio main image */
   .portfolio-main img{
     border: 5px solid var(--border-color);
     max-height: 600px;
   }
-  
+
+  /* setting parent for portfolio-name for small images */
   .portfolio-small a{
     position: relative;
   }
+
+  /* parameters for the portfolio small images */
   .portfolio-small img{
     margin: 20px;
     border: 5px solid var(--border-color);
